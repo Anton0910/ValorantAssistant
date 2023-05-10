@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
         btnRegister.setOnClickListener(view -> {
 
-            Intent intent = new Intent(this,Registro.class);
+            Intent intent = new Intent(this,TelaInicial.class);
             startActivity(intent);
 
         });
