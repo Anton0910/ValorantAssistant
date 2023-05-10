@@ -7,26 +7,26 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class MainActivity extends AppCompatActivity {
+public class Registro extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_registro);
         EditText editNome = findViewById(R.id.editTextTextPersonName);
         EditText editSenha = findViewById(R.id.editTextTextPassword);
-        Button btnLog = findViewById(R.id.button);
-        Button btnRegister = findViewById(R.id.button2);
-
-
-
-
+        EditText editSenhaConfirmar = findViewById(R.id.editTextTextPassword3);
+        Button btnRegister = findViewById(R.id.button);
+        Button btnVoltar = findViewById(R.id.button2);
 
         btnRegister.setOnClickListener(view -> {
-
-            Intent intent = new Intent(this,Registro.class);
+            Intent intent = new Intent(this,MainActivity.class);
             startActivity(intent);
+        });
 
+        btnVoltar.setOnClickListener(view -> {
+            Intent intent = new Intent(this,MainActivity.class);
+            startActivity(intent);
         });
     }
 }
