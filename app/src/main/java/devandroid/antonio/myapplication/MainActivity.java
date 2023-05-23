@@ -20,12 +20,17 @@ public class MainActivity extends AppCompatActivity {
         Button btnRegister = findViewById(R.id.button2);
 
 
+        btnLog.setOnClickListener(view -> {
 
+            Intent intent = new Intent(this,TelaInicial.class);
+            startActivity(intent);
+
+        });
 
 
         btnRegister.setOnClickListener(view -> {
 
-            Intent intent = new Intent(this,TelaInicial.class);
+            Intent intent = new Intent(this,Registro.class);
             startActivity(intent);
 
         });
