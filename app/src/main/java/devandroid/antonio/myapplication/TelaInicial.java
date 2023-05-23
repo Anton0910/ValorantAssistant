@@ -17,7 +17,7 @@ public class TelaInicial extends AppCompatActivity {
     }
     public void buttonMapas(MenuItem item) {
         // Lógica para tratar o clique no item "COMPS"
-        Intent intent = new Intent();
+        Intent intent = new Intent(this,mapas.class);
         startActivity(intent);
     }
 
