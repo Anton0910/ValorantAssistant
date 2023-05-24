@@ -4,23 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#364966"
-    tools:context=".TelaInicial">
+    android:background="#364966">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
-        android:layout_width="match_parent"
+        android:layout_width="409dp"
         android:layout_height="wrap_content"
         android:background="#FA4454"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:menu="@menu/top_menu_bar"
-        app:title="VALORANT ASSISTANT"
-        app:titleTextColor="#FFFFFF" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -38,11 +33,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
-        android:text="Patch 6.05"
+        android:text="Mapas"
         android:textColor="@android:color/white"
         android:textSize="50dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintHorizontal_bias="0.166"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
@@ -51,10 +46,9 @@
         android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
+
         android:autoSizeTextType="uniform"
-        android:text="Geeko:
-->Mosh Pit (C):
-O dano do Mosh Pit a objetos tem tido inconsistências com relação a habilidades semelhantes, como o FRAG/mento (C) do KAY/O e o Pós-choque (C) do Breach."
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur leo id ultrices pharetra. Sed hendrerit dapibus nisi, eget sagittis nulla facilisis non. Vestibulum nec eleifend nulla. Phasellus fringilla augue ac ligula tincidunt consequat. Proin ultrices metus et lacus dictum, eget condimentum lacus fermentum. Duis sit amet purus id massa sagittis dignissim."
         android:textColor="@android:color/white"
         android:textSize="17sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -70,6 +64,7 @@ O dano do Mosh Pit a objetos tem tido inconsistências com relação a habilidad
         android:background="#FA4454"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_nav_menu" />
+        app:menu="@menu/bottom_nav_menu2" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
