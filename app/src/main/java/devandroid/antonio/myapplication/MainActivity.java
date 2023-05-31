@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         btnLog.setOnClickListener(view -> {
 
-            Intent intent = new Intent(this,TelaInicial.class);
+            Intent intent = new Intent(this,Tela_Personagens.class);
             startActivity(intent);
 
         });

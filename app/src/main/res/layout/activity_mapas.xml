@@ -8,14 +8,18 @@
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
-        android:layout_width="409dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#FA4454"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/top_menu_bar"
+        app:title="VALORANT ASSISTANT"
+        app:titleTextColor="#FFFFFF" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -25,8 +29,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:srcCompat="@drawable/img_3" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2"/>
 
     <TextView
         android:id="@+id/textView2"
@@ -41,30 +44,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-
         android:autoSizeTextType="uniform"
         android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur leo id ultrices pharetra. Sed hendrerit dapibus nisi, eget sagittis nulla facilisis non. Vestibulum nec eleifend nulla. Phasellus fringilla augue ac ligula tincidunt consequat. Proin ultrices metus et lacus dictum, eget condimentum lacus fermentum. Duis sit amet purus id massa sagittis dignissim."
         android:textColor="@android:color/white"
         android:textSize="17sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.0" />
 
 
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="0dp"
-        android:background="#FA4454"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_nav_menu2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

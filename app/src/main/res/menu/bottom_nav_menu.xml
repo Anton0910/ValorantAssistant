@@ -4,18 +4,18 @@
         android:id="@+id/menu_button1"
         android:title="MAPAS"
         android:icon="@drawable/map"
-        android:onClick="buttonMapas"/>
+       />
 
     <item
         android:id="@+id/menu_button2"
         android:title="PERSONAGENS"
         android:icon="@drawable/user"
-        android:onClick="buttonPersonagens"/>
+       />
 
     <item
         android:id="@+id/menu_button3"
         android:title="COMPS"
         android:icon="@drawable/users"
-        android:onClick="buttonComps"/>
+        />
 
 </menu>
