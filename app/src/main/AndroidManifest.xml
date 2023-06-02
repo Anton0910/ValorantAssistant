@@ -14,9 +14,7 @@
         <activity
             android:name=".DescricaoPersonagens"
             android:exported="false" />
-        <activity
-            android:name=".Sova"
-            android:exported="false" />
+
         <activity
             android:name=".Tela_Personagens"
             android:exported="false" />
