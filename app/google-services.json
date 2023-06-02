@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "712003635990",
+    "project_id": "valorant-assistant-e290f",
+    "storage_bucket": "valorant-assistant-e290f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712003635990:android:4e3eaef3986314f1919e37",
+        "android_client_info": {
+          "package_name": "devandroid.antonio.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "712003635990-fmp3qrhsdfga9u5fja2m9ggl68d601df.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCV-DeCtdZu_vN7CVFxXkXMfl9xvgHyyDE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "712003635990-fmp3qrhsdfga9u5fja2m9ggl68d601df.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
