@@ -1,18 +1,14 @@
-package devandroid.antonio.myapplication;
+package devandroid.antonio.myapplication.telasLogineCadastro;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthResult;
-
+import devandroid.antonio.myapplication.R;
+import devandroid.antonio.myapplication.classes.Usuario;
 import devandroid.antonio.myapplication.helper.FirebaseHelper;
 
 
@@ -78,7 +74,13 @@ public class Registro extends AppCompatActivity {
                 usuario.setSenha(password);
 
                 salvarCadastro(usuario);
-                Intent intent = new Intent(this,MainActivity.class);
+
+                usuario.salvarPessoa();
+
+
+
+
+                Intent intent = new Intent(this, MainActivity.class);
                 startActivity(intent);
             }
 
