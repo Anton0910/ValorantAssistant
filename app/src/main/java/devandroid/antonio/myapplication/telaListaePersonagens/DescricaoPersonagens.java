@@ -1,10 +1,12 @@
-package devandroid.antonio.myapplication;
+package devandroid.antonio.myapplication.telaListaePersonagens;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import devandroid.antonio.myapplication.R;
 
 public class DescricaoPersonagens extends AppCompatActivity {
     ImageView img;

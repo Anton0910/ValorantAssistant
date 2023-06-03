@@ -1,4 +1,4 @@
-package devandroid.antonio.myapplication;
+package devandroid.antonio.myapplication.classes;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +9,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
+
+import devandroid.antonio.myapplication.R;
 
 public class AdapterPersonagens extends RecyclerView.Adapter<AdapterPersonagens.MyviewHolder> {
     private List <Personagens> personagensList;

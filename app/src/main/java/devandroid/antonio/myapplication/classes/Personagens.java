@@ -1,4 +1,4 @@
-package devandroid.antonio.myapplication;
+package devandroid.antonio.myapplication.classes;
 
 import android.media.Image;
 
