@@ -79,10 +79,25 @@ public class Tela_Personagens extends AppCompatActivity implements AdapterPerson
     private void carregaLista(){
         Personagens personagens1 = new Personagens();
         Personagens personagens2 = new Personagens();
+        Personagens personagens3 = new Personagens();
+        Personagens personagens4 = new Personagens();
+        Personagens personagens5 = new Personagens();
+        Personagens personagens6 = new Personagens();
+        Personagens personagens7 = new Personagens();
         personagens1.setNome("Jett");
         personagens2.setNome("Sova");
+        personagens3.setNome("Omen");
+        personagens4.setNome("Sage");
+        personagens5.setNome("Chypher");
+        personagens6.setNome("Raze");
+        personagens7.setNome("Fade");
         personagensList.add(personagens1);
         personagensList.add(personagens2);
+        personagensList.add(personagens3);
+        personagensList.add(personagens4);
+        personagensList.add(personagens5);
+        personagensList.add(personagens6);
+        personagensList.add(personagens7);
     }
 
     private void configRecyclerView(){

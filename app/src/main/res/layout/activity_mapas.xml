@@ -51,7 +51,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:autoSizeTextType="uniform"
-        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur leo id ultrices pharetra. Sed hendrerit dapibus nisi, eget sagittis nulla facilisis non. Vestibulum nec eleifend nulla. Phasellus fringilla augue ac ligula tincidunt consequat. Proin ultrices metus et lacus dictum, eget condimentum lacus fermentum. Duis sit amet purus id massa sagittis dignissim."
+        android:text="Uma estrutura misteriosa com um conduíte astral irradia poder ancestral. Grandes portas de pedra oferecem várias oportunidades de movimentação e revelam caminhos para três locais enigmáticos."
         android:textColor="@android:color/white"
         android:textSize="17sp"
         app:layout_constraintEnd_toEndOf="parent"

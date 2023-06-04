@@ -25,7 +25,7 @@ public class mapas extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mapas);
         img = findViewById(R.id.imageView4);
-        drawable = R.drawable.img_3;
+        drawable = R.drawable.img_4;
         img.setImageResource(drawable);
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_nav);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
