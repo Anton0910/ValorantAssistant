@@ -6,4 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".telaListaePersonagens.TelaComposicoes">
 
+    <ListView
+        android:id="@+id/listViewDados"
+        android:layout_width="416dp"
+        android:layout_height="526dp"
+        tools:layout_editor_absoluteX="-6dp"
+        tools:layout_editor_absoluteY="1dp" />
+
+    <Button
+        android:id="@+id/buttonCadastrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="598dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
