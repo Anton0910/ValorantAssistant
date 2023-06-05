@@ -10,6 +10,7 @@ import android.database.sqlite.SQLiteStatement;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -32,6 +33,43 @@ public class TelaComposicoes extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_composicoes);
+
+
+
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_nav);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                int itemId = item.getItemId();
+
+                if (itemId == R.id.menu_button3) {
+                    // Abrir outra tela aqui
+                    Intent intent = new Intent(TelaComposicoes.this, TelaComposicoes.class);
+                    startActivity(intent);
+                    return true;
+                }
+
+                if (itemId == R.id.menu_button1) {
+                    // Abrir outra tela aqui
+                    Intent intent = new Intent(TelaComposicoes.this, devandroid.antonio.myapplication.mapas.class);
+                    startActivity(intent);
+                    return true;
+                }
+
+                if (itemId == R.id.menu_button2) {
+                    // Abrir outra tela aqui
+                    Intent intent = new Intent(TelaComposicoes.this, Tela_Personagens.class);
+                    startActivity(intent);
+                    return true;
+                }
+
+                return false;
+            }
+        });
+
+
+
+
 
         listViewDados = findViewById(R.id.listViewDados);
         Button button = (Button) findViewById(R.id.buttonCadastrar);
