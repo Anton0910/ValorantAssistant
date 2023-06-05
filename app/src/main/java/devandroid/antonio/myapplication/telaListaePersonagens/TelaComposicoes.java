@@ -26,7 +26,7 @@ public class TelaComposicoes extends AppCompatActivity {
         listViewDados = findViewById(R.id.listViewDados);
 
         criarBancoDados();
-        inserirDados("coisa 1", "valor atributo 3", "valor atributo 4", "valor atributo 5");
+        inserirDados("coisa 1", "valor atributo 3", "valor atributo 4", "valor atributo 5", "valor atributo 6");
         listarDados();
     }
 
@@ -38,12 +38,14 @@ public class TelaComposicoes extends AppCompatActivity {
                     "nome VARCHAR(30)," +
                     "atributo3 VARCHAR(30)," +
                     "atributo4 VARCHAR(30)," +
-                    "atributo5 VARCHAR(30))");
+                    "atributo5 VARCHAR(30)," +
+                    "atributo6 VARCHAR(30))");
             bancoDados.close();
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
+
 
     public void listarDados() {
         try {
@@ -58,7 +60,8 @@ public class TelaComposicoes extends AppCompatActivity {
                 String atributo3 = meuCursor.getString(2);
                 String atributo4 = meuCursor.getString(3);
                 String atributo5 = meuCursor.getString(4);
-                linhas.add("ID: " + id + ", Nome: " + nome + ", Atributo 3: " + atributo3 + ", Atributo 4: " + atributo4 + ", Atributo 5: " + atributo5);
+                String atributo6 = meuCursor.getString(5);
+                linhas.add("ID: " + id + ", Nome: " + nome + ", Atributo 3: " + atributo3 + ", Atributo 4: " + atributo4 + ", Atributo 5: " + atributo5 + ", Atributo 6: " + atributo6);
                 meuCursor.moveToNext();
             }
 
@@ -72,16 +75,17 @@ public class TelaComposicoes extends AppCompatActivity {
         }
     }
 
-    public void inserirDados(String nome, String atributo3, String atributo4, String atributo5) {
+    public void inserirDados(String nome, String atributo3, String atributo4, String atributo5, String atributo6) {
         try {
             bancoDados = openOrCreateDatabase("comps", MODE_PRIVATE, null);
-            String sql = "INSERT INTO comps (duelista, sentinela, controlador, coringa) VALUES (?, ?, ?, ?)";
+            String sql = "INSERT INTO comps (nome, atributo3, atributo4, atributo5, atributo6) VALUES (?, ?, ?, ?, ?)";
             SQLiteStatement stmt = bancoDados.compileStatement(sql);
 
             stmt.bindString(1, nome);
             stmt.bindString(2, atributo3);
             stmt.bindString(3, atributo4);
             stmt.bindString(4, atributo5);
+            stmt.bindString(5, atributo6);
             stmt.execute();
 
             bancoDados.close();
