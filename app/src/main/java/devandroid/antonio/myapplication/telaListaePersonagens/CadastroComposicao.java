@@ -2,6 +2,7 @@ package devandroid.antonio.myapplication.telaListaePersonagens;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -28,6 +29,19 @@ public class CadastroComposicao extends AppCompatActivity {
         sentinela = findViewById(R.id.editTextTextPersonName4);
         flexivel = findViewById(R.id.editTextTextPersonName5);
         btn_cadastro = findViewById(R.id.button);
+
+        btn_cadastro.setOnClickListener(view -> {
+            Intent intent = new Intent(this,TelaComposicoes.class);
+            intent.putExtra("cadastroPendente",true);
+            intent.putExtra("iniciador",iniciador.getText().toString());
+            intent.putExtra("controlador",controlador.getText().toString());
+            intent.putExtra("sentinela",sentinela.getText().toString());
+            intent.putExtra("flexivel",flexivel.getText().toString());
+            intent.putExtra("duelista",duelista.getText().toString());
+            startActivity(intent);
+
+
+        });
 
 
     }
