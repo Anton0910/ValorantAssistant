@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
 
         btnRegister.setOnClickListener(view -> {
 
-            Intent intent = new Intent(this, TelaComposicoes.class);
+            Intent intent = new Intent(this, Registro.class);
             startActivity(intent);
 
         });
