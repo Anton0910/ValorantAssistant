@@ -26,7 +26,7 @@ public class TelaComposicoes extends AppCompatActivity {
         listViewDados = findViewById(R.id.listViewDados);
 
         criarBancoDados();
-        inserirDadosTemp();
+        inserirDados("coisa 1", "valor atributo 3", "valor atributo 4", "valor atributo 5");
         listarDados();
     }
 
@@ -72,28 +72,16 @@ public class TelaComposicoes extends AppCompatActivity {
         }
     }
 
-    public void inserirDadosTemp() {
+    public void inserirDados(String nome, String atributo3, String atributo4, String atributo5) {
         try {
             bancoDados = openOrCreateDatabase("comps", MODE_PRIVATE, null);
-            String sql = "INSERT INTO comps (nome, atributo3, atributo4, atributo5) VALUES (?, ?, ?, ?)";
+            String sql = "INSERT INTO comps (duelista, sentinela, controlador, coringa) VALUES (?, ?, ?, ?)";
             SQLiteStatement stmt = bancoDados.compileStatement(sql);
 
-            stmt.bindString(1, "coisa 1");
-            stmt.bindString(2, "valor atributo 3");
-            stmt.bindString(3, "valor atributo 4");
-            stmt.bindString(4, "valor atributo 5");
-            stmt.execute();
-
-            stmt.bindString(1, "coisa abc");
-            stmt.bindString(2, "valor abc atributo 3");
-            stmt.bindString(3, "valor abc atributo 4");
-            stmt.bindString(4, "valor abc atributo 5");
-            stmt.execute();
-
-            stmt.bindString(1, "coisa terceira");
-            stmt.bindString(2, "valor terceiro atributo 3");
-            stmt.bindString(3, "valor terceiro atributo 4");
-            stmt.bindString(4, "valor terceiro atributo 5");
+            stmt.bindString(1, nome);
+            stmt.bindString(2, atributo3);
+            stmt.bindString(3, atributo4);
+            stmt.bindString(4, atributo5);
             stmt.execute();
 
             bancoDados.close();
