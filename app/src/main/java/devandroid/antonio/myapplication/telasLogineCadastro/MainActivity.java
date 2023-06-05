@@ -14,6 +14,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import devandroid.antonio.myapplication.R;
 import devandroid.antonio.myapplication.TelaInicial;
 import devandroid.antonio.myapplication.helper.FirebaseHelper;
+import devandroid.antonio.myapplication.telaListaePersonagens.TelaComposicoes;
 import devandroid.antonio.myapplication.telasLogineCadastro.Registro;
 
 public class MainActivity extends AppCompatActivity {
@@ -68,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
 
         btnRegister.setOnClickListener(view -> {
 
-            Intent intent = new Intent(this, Registro.class);
+            Intent intent = new Intent(this, TelaComposicoes.class);
             startActivity(intent);
 
         });

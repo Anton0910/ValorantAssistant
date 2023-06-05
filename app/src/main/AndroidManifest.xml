@@ -16,6 +16,7 @@
             android:exported="false" />
         <activity
             android:name=".TelaComposicoes"
+            android:name=".telaListaePersonagens.TelaComposicoes"
             android:exported="false" />
         <activity
             android:name=".telaListaePersonagens.DescricaoPersonagens"
@@ -27,7 +28,7 @@
             android:name=".TelaInicial"
             android:exported="false" />
         <activity
-            android:name="devandroid.antonio.myapplication.mapas"
+            android:name=".mapas"
             android:exported="false" />
         <activity
             android:name=".telasLogineCadastro.Registro"
