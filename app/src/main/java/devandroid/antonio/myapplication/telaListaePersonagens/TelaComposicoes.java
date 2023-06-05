@@ -1,5 +1,6 @@
 package devandroid.antonio.myapplication.telaListaePersonagens;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -14,9 +15,12 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
 import java.util.ArrayList;
 
 import devandroid.antonio.myapplication.R;
+import devandroid.antonio.myapplication.mapas;
 
 public class TelaComposicoes extends AppCompatActivity {
 
@@ -34,7 +38,7 @@ public class TelaComposicoes extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(TelaComposicoes.this, cadastroComp.class);
+                Intent intent = new Intent(TelaComposicoes.this, CadastroComposicao.class);
                 startActivity(intent);
             }
         });
