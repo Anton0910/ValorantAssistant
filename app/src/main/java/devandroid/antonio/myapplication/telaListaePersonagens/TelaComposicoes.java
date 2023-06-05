@@ -1,24 +1,32 @@
 package devandroid.antonio.myapplication.telaListaePersonagens;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteStatement;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
 
 import devandroid.antonio.myapplication.R;
+import devandroid.antonio.myapplication.mapas;
 
 public class TelaComposicoes extends AppCompatActivity {
 
     private SQLiteDatabase bancoDados;
     private ListView listViewDados;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,14 +34,29 @@ public class TelaComposicoes extends AppCompatActivity {
         setContentView(R.layout.activity_tela_composicoes);
 
         listViewDados = findViewById(R.id.listViewDados);
+        Button button = (Button) findViewById(R.id.buttonCadastrar);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TelaComposicoes.this, CadastroComposicao.class);
+                startActivity(intent);
+            }
+        });
+        Intent intent = getIntent();
+        boolean cadastroPendente = intent.getBooleanExtra("cadastroPendente", false);
+        if (cadastroPendente) {
+
+            inserirDados("valor atributo 1", "valor atributo 3", "valor atributo 4", "valor atributo 5", "valor atributo 6");
+
+        }
 
         criarBancoDados();
-        inserirDados("valor atributo 1", "valor atributo 3", "valor atributo 4", "valor atributo 5", "valor atributo 6");
 
-        // Aguarde 500 milissegundos antes de listar os dados
         Handler handler = new Handler(Looper.getMainLooper());
         handler.postDelayed(() -> listarDados(), 500);
     }
+
+
 
     public void criarBancoDados() {
         try {
@@ -69,7 +92,7 @@ public class TelaComposicoes extends AppCompatActivity {
                 String atributo4 = meuCursor.getString(3);
                 String atributo5 = meuCursor.getString(4);
                 String atributo6 = meuCursor.getString(5);
-                linhas.add("ID: " + id + ", Nome: " + nome + ", Atributo 3: " + atributo3 + ", Atributo 4: " + atributo4 + ", Atributo 5: " + atributo5 + ", Atributo 6: " + atributo6);
+                linhas.add("ID: " + id + ", Iniciado: " + nome + ", Duelista: " + atributo3 + ", Sentinela: " + atributo4 + ", Controlador: " + atributo5 + ",Coringa: " + atributo6);
                 meuCursor.moveToNext();
             }
 
