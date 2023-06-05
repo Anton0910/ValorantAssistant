@@ -6,6 +6,8 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteStatement;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -26,8 +28,11 @@ public class TelaComposicoes extends AppCompatActivity {
         listViewDados = findViewById(R.id.listViewDados);
 
         criarBancoDados();
-        inserirDados("coisa 1", "valor atributo 3", "valor atributo 4", "valor atributo 5", "valor atributo 6");
-        listarDados();
+        inserirDados("valor atributo 1", "valor atributo 3", "valor atributo 4", "valor atributo 5", "valor atributo 6");
+
+        // Aguarde 500 milissegundos antes de listar os dados
+        Handler handler = new Handler(Looper.getMainLooper());
+        handler.postDelayed(() -> listarDados(), 500);
     }
 
     public void criarBancoDados() {
@@ -40,9 +45,12 @@ public class TelaComposicoes extends AppCompatActivity {
                     "atributo4 VARCHAR(30)," +
                     "atributo5 VARCHAR(30)," +
                     "atributo6 VARCHAR(30))");
-            bancoDados.close();
         } catch (Exception e) {
             e.printStackTrace();
+        } finally {
+            if (bancoDados != null) {
+                bancoDados.close();
+            }
         }
     }
 
@@ -91,6 +99,10 @@ public class TelaComposicoes extends AppCompatActivity {
             bancoDados.close();
         } catch (Exception e) {
             e.printStackTrace();
+        } finally {
+            if (bancoDados != null) {
+                bancoDados.close();
+            }
         }
     }
 }
