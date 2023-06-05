@@ -12,10 +12,9 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
-            android:name=".CadastroComposicao"
+            android:name=".telaListaePersonagens.CadastroComposicao"
             android:exported="false" />
         <activity
-            android:name=".TelaComposicoes"
             android:name=".telaListaePersonagens.TelaComposicoes"
             android:exported="false" />
         <activity

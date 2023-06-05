@@ -45,8 +45,13 @@ public class TelaComposicoes extends AppCompatActivity {
         Intent intent = getIntent();
         boolean cadastroPendente = intent.getBooleanExtra("cadastroPendente", false);
         if (cadastroPendente) {
+            String duelista  =  intent.getStringExtra("duelista");
+            String iniciador  =  intent.getStringExtra("iniciador");
+            String controlador  =  intent.getStringExtra("controlador");
+            String sentinela  =  intent.getStringExtra("sentinela");
+            String flexivel  =  intent.getStringExtra("flexivel");
 
-            inserirDados("valor atributo 1", "valor atributo 3", "valor atributo 4", "valor atributo 5", "valor atributo 6");
+            inserirDados(duelista, iniciador, controlador, sentinela, flexivel);
 
         }
 
