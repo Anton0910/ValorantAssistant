@@ -26,7 +26,7 @@ Navegue para o diretório do projeto:
 bash
 Copy code
 cd ValorantAssistant
-<h5 align="center">
+<h5 >
 Abra o projeto no ambiente de desenvolvimento de sua preferência (por exemplo, IntelliJ, Eclipse).
 
 Configure o ambiente de desenvolvimento para utilizar o JDK e as ferramentas de compilação do Android.
@@ -49,7 +49,7 @@ git checkout -b minha-contribuicao
 Implemente suas alterações e melhorias no código.
 
 Execute os testes para garantir que tudo esteja funcionando corretamente.
-<h5 align="center">
+<h5 >
 Envie suas alterações para o repositório remoto:
 
 perl
