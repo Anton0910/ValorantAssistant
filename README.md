@@ -26,7 +26,7 @@ Navegue para o diretório do projeto:
 bash
 Copy code
 cd ValorantAssistant
-
+<h5 align="center">
 Abra o projeto no ambiente de desenvolvimento de sua preferência (por exemplo, IntelliJ, Eclipse).
 
 Configure o ambiente de desenvolvimento para utilizar o JDK e as ferramentas de compilação do Android.
@@ -34,6 +34,7 @@ Configure o ambiente de desenvolvimento para utilizar o JDK e as ferramentas de 
 Conecte um dispositivo Android ao computador ou inicie um emulador Android.
 
 Compile e execute o aplicativo no dispositivo ou emulador.
+</h5>
 
 Contribuição
 Contribuições para o Valorant App são bem-vindas! Se você deseja contribuir para o projeto, siga as etapas abaixo:
@@ -41,15 +42,14 @@ Contribuições para o Valorant App são bem-vindas! Se você deseja contribuir 
 Faça um fork do repositório do projeto.
 
 Crie um novo branch para a sua contribuição:
-<code>
+
 css
 Copy code
 git checkout -b minha-contribuicao
-<code>
 Implemente suas alterações e melhorias no código.
 
 Execute os testes para garantir que tudo esteja funcionando corretamente.
-
+<h5 align="center">
 Envie suas alterações para o repositório remoto:
 
 perl
@@ -58,6 +58,7 @@ Copy code
 git push origin minha-contribuicao
 <code>
 Abra um pull request explicando suas alterações e os motivos pelos quais elas são importantes.
+</h5>
 
 Licença
 O Valorant App é distribuído sob a licença MIT. Consulte o arquivo LICENSE para obter mais informações.
