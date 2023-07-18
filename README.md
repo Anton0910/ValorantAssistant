@@ -1,6 +1,6 @@
 <h1 align="center">Valorant Assistant - README</h1>
 
-O Valorant App é um projeto de um aplicativo desenvolvido em Java que oferece recursos e informações úteis para os jogadores de Valorant, um jogo de tiro em primeira pessoa. O aplicativo visa fornecer uma experiência aprimorada e conveniente para os jogadores ao disponibilizar notícias, guias de personagens e muito mais.
+<h3 align="center">O Valorant App é um projeto de um aplicativo desenvolvido em Java que oferece recursos e informações úteis para os jogadores de Valorant, um jogo de tiro em primeira pessoa. O aplicativo visa fornecer uma experiência aprimorada e conveniente para os jogadores ao disponibilizar notícias, guias de personagens e muito mais.</h3>
 
 # :hammer: Funcionalidades do projeto
 - `Funcionalidade 1`: O app fornece guias completos para cada personagem do jogo Valorant, incluindo suas habilidades, estratégias e melhores práticas.
@@ -18,7 +18,7 @@ Clone o repositório do projeto:
 <code>
 bash
 Copy code
-<code>
+</code>
 git clone https://github.com/Anton0910/ValorantAssistant.git
 Navegue para o diretório do projeto:
 
@@ -26,6 +26,7 @@ Navegue para o diretório do projeto:
 bash
 Copy code
 cd ValorantAssistant
+
 Abra o projeto no ambiente de desenvolvimento de sua preferência (por exemplo, IntelliJ, Eclipse).
 
 Configure o ambiente de desenvolvimento para utilizar o JDK e as ferramentas de compilação do Android.
@@ -40,10 +41,11 @@ Contribuições para o Valorant App são bem-vindas! Se você deseja contribuir 
 Faça um fork do repositório do projeto.
 
 Crie um novo branch para a sua contribuição:
-
+<code>
 css
 Copy code
 git checkout -b minha-contribuicao
+<code>
 Implemente suas alterações e melhorias no código.
 
 Execute os testes para garantir que tudo esteja funcionando corretamente.
@@ -51,8 +53,10 @@ Execute os testes para garantir que tudo esteja funcionando corretamente.
 Envie suas alterações para o repositório remoto:
 
 perl
+<code>
 Copy code
 git push origin minha-contribuicao
+<code>
 Abra um pull request explicando suas alterações e os motivos pelos quais elas são importantes.
 
 Licença
