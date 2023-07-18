@@ -13,9 +13,10 @@ Android SDK e ferramentas de compilação para desenvolvimento Android.
 Um dispositivo Android com depuração USB ativada ou um emulador Android.
 Como executar o aplicativo
 Clone o repositório do projeto:
-
+<code>
 bash
 Copy code
+<code>
 git clone https://github.com/Anton0910/ValorantAssistant.git
 Navegue para o diretório do projeto:
 
