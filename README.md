@@ -1,17 +1,19 @@
-Valorant Assistant - README
+<h1 align="center">Valorant Assistant - README</h1>
 
 O Valorant App é um projeto de um aplicativo desenvolvido em Java que oferece recursos e informações úteis para os jogadores de Valorant, um jogo de tiro em primeira pessoa. O aplicativo visa fornecer uma experiência aprimorada e conveniente para os jogadores ao disponibilizar notícias, guias de personagens e muito mais.
 
-Funcionalidades Principais
-Guias de personagens: O app fornece guias completos para cada personagem do jogo Valorant, incluindo suas habilidades, estratégias e melhores práticas.
-Notícias e atualizações: Os usuários têm acesso às últimas notícias, anúncios e atualizações do jogo Valorant, permitindo que fiquem atualizados sobre as mudanças e novidades do jogo.
-Comunidade: O aplicativo oferece recursos de interação social, como fóruns e bate-papo, para que os jogadores possam se conectar, discutir estratégias, formar equipes e compartilhar experiências.
+# :hammer: Funcionalidades do projeto
+- `Funcionalidade 1`: O app fornece guias completos para cada personagem do jogo Valorant, incluindo suas habilidades, estratégias e melhores práticas.
+- `Funcionalidade 2`: Os usuários têm acesso às últimas notícias, anúncios e atualizações do jogo Valorant, permitindo que fiquem atualizados sobre as mudanças e novidades do jogo.
+- `Funcionalidade 3`: O aplicativo oferece recursos de interação social, como fóruns e bate-papo, para que os jogadores possam se conectar, discutir estratégias, formar equipes e compartilhar experiências.
 
 Pré-requisitos
 Java Development Kit (JDK) 8 ou superior.
 Android SDK e ferramentas de compilação para desenvolvimento Android.
 Um dispositivo Android com depuração USB ativada ou um emulador Android.
-Como executar o aplicativo
+
+
+# 📁 Acesso ao projeto
 Clone o repositório do projeto:
 <code>
 bash
@@ -20,6 +22,7 @@ Copy code
 git clone https://github.com/Anton0910/ValorantAssistant.git
 Navegue para o diretório do projeto:
 
+# 🛠️ Abrir e rodar o projeto
 bash
 Copy code
 cd ValorantAssistant
